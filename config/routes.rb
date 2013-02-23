@@ -1,4 +1,7 @@
 Smartnetwork::Application.routes.draw do
+  resources :financial_products
+
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
