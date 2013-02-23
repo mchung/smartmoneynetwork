@@ -1,5 +1,11 @@
 ActiveAdmin.register FinancialProduct do
 
+  ActsAsTaggableOn::Tag.find_each do |tag|
+    scope tag.name do |products|
+      FinancialProduct.tagged_with(tag.name)
+    end
+  end
+
   index do
     selectable_column
     column "Title" do |product|
