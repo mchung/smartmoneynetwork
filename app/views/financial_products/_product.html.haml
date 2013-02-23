@@ -1,0 +1,20 @@
+.well
+  .span6
+    %h4
+      = product.title
+    %h5
+      Service Type
+      = product.service_type
+    %p
+      = product.description
+  .row
+    .span4.well.pull-right
+      %address
+        %strong
+          = product.contact_agency_name
+        %p
+          = link_to product.contact_address, "http://maps.google.com/?q=#{product.contact_address.split.join(' ')}"
+        %p
+          = product.contact_name
+        %p
+          = product.contact_phone_number
