@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20130223214857) do
     t.text     "description"
     t.string   "service_type"
     t.string   "url"
-    t.string   "agency_name"
+    t.string   "contact_agency_name"
     t.string   "contact_name"
     t.string   "contact_phone_number"
     t.text     "contact_address"

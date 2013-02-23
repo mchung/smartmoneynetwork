@@ -5,7 +5,7 @@ class CreateFinancialProducts < ActiveRecord::Migration
       t.text :description
       t.string :service_type
       t.string :url
-      t.string :agency_name
+      t.string :contact_agency_name
       t.string :contact_name
       t.string :contact_phone_number
       t.text :contact_address
