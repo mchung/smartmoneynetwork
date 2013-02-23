@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title><%= content_for?(:title) ? yield(:title) : "SF Smart Money Network" %></title>
+
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -26,7 +30,7 @@
         </div>
     </div>
 </head>
-<body>
+<body class="#{controller_name #{action_name}">
     <div class="jumbotron">
         <%= image_tag "headhome.png" %>
     </div>
@@ -97,6 +101,7 @@
                 </div>
             </div>
             <div class="span10">
+                <%= render 'layouts/messages' %>
                 <hr>
 
                 <%= yield %>
