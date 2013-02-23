@@ -264,6 +264,7 @@ DEPENDENCIES
   haml-rails (>= 0.4)
   html2haml (>= 1.0.1)
   jquery-rails
+  kaminari
   launchy (>= 2.2.0)
   pg
   quiet_assets (>= 1.0.1)
